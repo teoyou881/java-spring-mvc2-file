@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+<div class="container">
+  <div class="py-5 text-center">
+    <h2>Product Detail</h2>
+  </div>
+  Product Name: <span th:text="${item.itemName}">Product Name</span><br/> Attachment:
+  <a th:href="|/attach/${item.id}|" th:if="${item.attachFile}" th:text="${item.getAttachFile().getUploadFileName()}"/><br/>
+  <img height="300" th:each="imageFile : ${item.imageFiles}" th:src="|/images/${imageFile.getStoreFileName()}|" width="300"/>
+</div> <!-- /container -->
+</body>
+</html>

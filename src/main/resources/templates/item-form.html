@@ -6,13 +6,13 @@
 <body>
 <div class="container">
   <div class="py-5 text-center">
-    <h2>Product Registration Form</h2>
+    <h2>Product Registration</h2>
   </div>
-  <h4 class="mb-3">Enter Product</h4>
   <form enctype="multipart/form-data" method="post" th:action>
     <ul>
       <li>Product Name <input name="itemName" type="text"></li>
-      <li>File <input name="file" type="file"></li>
+      <li>Attachment File <input name="attachFile" type="file"></li>
+      <li>Image Files <input multiple="multiple" name="imageFiles" type="file"></li>
     </ul>
     <input type="submit"/>
   </form>

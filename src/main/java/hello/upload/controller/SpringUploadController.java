@@ -15,7 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Slf4j
 @Controller
-@RequestMapping("/servlet/v3")
+@RequestMapping("/spring")
 public class SpringUploadController {
 
   @Value("${file.dir}")
