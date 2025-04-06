@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Item Upload Form</title>
+</head>
+<body>
+<div class="container">
+  <div class="py-5 text-center">
+    <h2>Item Registration Form</h2>
+  </div>
+
+  <h4 class="mb-3">Enter Item Details</h4>
+  <form enctype="multipart/form-data" method="post" th:action>
+    <ul>
+      <li>Item Name: <input name="itemName" type="text"></li>
+      <li>File: <input name="file" type="file"></li>
+    </ul>
+    <input type="submit" value="Submit"/>
+  </form>
+</div> <!-- /container -->
+</body>
+</html>
